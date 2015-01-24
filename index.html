@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="datavis.ico" />
-    <title>coming soon</title>
+    <title>Home|Data Visualization</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/datavis.css">
     <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.min.css">
@@ -23,8 +23,110 @@
 </head>
 
 <body>
-<h1>
-Coming soon
-</h1>
+<div id="navbar"></div>
+<!--navbar-->
+<script>
+    var loadNav = function(){
+        $("#navbar").load("navbar.html");
+    }
+    loadNav();
+</script>
+<!--navbar-->
+
+<!-- end navbar-->
+
+    <!---main-->
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-md-10 col-md-push-1 col-sm-10 col-sm-push-1 colup well">
+            <h3>Welcome to this Data Visualization site!</h3>
+                <p>This site is intended to give a brief introduction to the data visualization field. You can also find data visualization methods, techniques, as well as some examples in this site. If you are interested in this topic, you can further find recommendations for books, data visualization websites and open data sources here. You can explore this site by using the navigation bar at the top, or you can explore with <a href="about.html#tag">tags</a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-push-1 col-sm-10 col-sm-push-1 colleft" >
+
+                <!-- Bootstrap Carousel -->
+                <div id="datavisCarousel" class="carousel slide " data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#datavisCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#datavisCarousel" data-slide-to="1"></li>
+                        <li data-target="#datavisCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="geo-spatial-data.html" target="_blank"><img class="img-responsive center-block" src="media/map02.jpg"></a>
+                            <div class="carousel-caption">
+                                <h3>Choropleth map</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <a href="bigdata-and-datavisualization.html" target="_blank"><img class="img-responsive center-block" src="media/bigdata-and-datavis--pic01.jpg"></a>
+                            <div class="carousel-caption">
+                                <h3>Big data and data visualization</h3>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <a href="why-visualization.html" target="_blank"><img class="img-responsive center-block" src="media/whydatavisulization-pic.jpg"></a>
+                            <div class="carousel-caption" >
+                                <h3>Why visualization?</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#datavisCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#datavisCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-8 col-md-push-1 col-sm-push-2 colright">
+                <div class="features-grids text-center">
+                    <div class="col-md-6 col-sm-6 col-xs-12 features-grid">
+                        <a href="bigdata-and-datavisualization.html" target="_blank">
+                            <span class="fea-icon1"><i class="fa fa-question"></i><br><b class="featitle">Introduction</b> </span>
+                        </a>
+                        <p>New to data visualization? Check out this biref introduction!</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 features-grid" >
+                       <a href="3-Steps-to-visualize-data.html" target="_blank" >
+                        <span class="fea-icon1"><i class="fa fa-search"> </i><br> <b class="featitle">Explore</b> </span>
+                       </a>
+                        <p>Interested to dive deep in data visualization? Explore this section for more practical tips and examples!  </p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 features-grid">
+                        <a href="sites.html" target="_blank">
+                        <span class="fea-icon1"><i class="fa fa-archive"> </i><br><b class="featitle">Toolbox</b> </span>
+                        </a>
+                        <p>Find interesting data visualization websites, open data sources and books! </p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 features-grid">
+                        <a href="about.html" target="_blank">
+                        <span class="fea-icon1"><i class="fa fa-info"> </i><br><b class="featitle">About</b> </span>
+                        </a>
+                        <p>A brief introduction to this website and a refrence list</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>
+<footer class="text-center">
+    <small class="text-muted">Designed by Qian Yang for LIBR 500 - Foundations of Information Technology | November 2, 2014</small>
+</footer>
+
 </body>
 </html>

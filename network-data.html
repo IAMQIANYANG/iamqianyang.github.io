@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="datavis.ico" />
+    <title>Network data-Data-Vis</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/datavis.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="navbar"></div>
+<!--navbar-->
+<script>
+    var loadNav = function(){
+        $("#navbar").load("navbar.html");
+    }
+    loadNav();
+</script>
+
+<div class="container-fluid">
+    <div class="popover-content col-md-8 col-md-push-1">
+        <div class="page-header"><h2>Network Data</h2></div>
+        <div class="content col-md-12">
+        <p>This part is quoted from the books of <a href="about.html#success">Kirk (2012)</a>, p.150</p>
+        <p>In the field of data analysis, the concept of network analysis becoming increasingly popular. Instead of only look at attributes of data, network analysts also focus on the connections between data and the resulting structures. It focuses on relationships instead of just the individual elements that can explain social, cultural, or economic phenomena; how the elements are connected is just as important as the elements themselves.</p>
+        <h4>Network diagram (or force-directed/node-link network)</h4>
+        <h4>Data variables: Multiplex categorical-nominal, 1 x quantitative-ratio.</h4>
+        <h4>Visual variables: Position, connection, area, color-hue.</h4>
+        <p>Description: At first glance, network diagrams, can look quite daunting through their visual complexity and apparent clutter (indeed, often they are described as "hairballs"). Their intention and value is to facilitate exploration of complex data frameworks based on the existence or quantifiable strength of relationships, connections, and logical organization. The typical purpose of these graphs is to enable the viewer to get a sense of patterns—picking out the elements that are of interest, observing clusters and gaps, dominant nodes and sparse connections. </p>
+        <a href="http://www.visualizing.org/visualizations/human-diseasome"><img class="img-responsive center-block" src="media/network01.jpg"></a>
+        <footer class="text-center">Click on the picture to visit the original site<cite title="Source Title"></cite></footer>
+        </div>
+    </div>
+    <div class="sidebar content col-md-2 col-md-push-1">
+        <div class="popover-content well col-sm-12">
+            <h3>Do you know?</h3>
+            <p>Analyzing network data sounds interesting. Would like to try to analyze your facebook account</p>
+            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                Interested? </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="close"data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <h1><a target="_blank" href="http://www.wolframalpha.com/input/?i=facebook">WolframAlpha</a> could connect to your facebook account and visualize your network for you!</h1>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Site tags</h3>
+            <small>use them to explore this site!</small>
+            <h2><a target="_blank" href="sites.html#opendata">open data</a></h2>
+            <h4><a target="_blank" href="visual-variables.html">visual variables</a></h4>
+            <h2><a target="_blank" href="bigdata-and-datavisualization.html">big data</a></h2>
+            <h3><a target="_blank" href="tree-map.html">Tree map</a></h3>
+            <h3><a target="_blank" href="books.html#tableau">Tableau</a></h3>
+            <h4><a target="_blank" href="books.html#D3">D3.js</a></h4>
+            <h3><a target="_blank" href="network-data.html">network data</a></h3>
+            <h4><a target="_blank" href="about.html">Bootstrap</a></h4>
+            <h4><a target="_blank" href="why-visualization.html">eyes</a></h4>
+        </div>
+    </div>
+
+    </div>
+</div>
+<footer class="text-center">
+    <small class="text-muted">Designed by Qian Yang for LIBR 500 - Foundations of Information Technology</small>
+</footer>
+</body>
+</html>
