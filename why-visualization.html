@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="datavis.ico" />
+    <title>Why visulization?-Data-Vis</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/datavis.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="navbar"></div>
+<!--navbar-->
+<script>
+    var loadNav = function(){
+        $("#navbar").load("navbar.html");
+    }
+    loadNav();
+</script>
+
+<div class="container-fluid">
+    <div class="popover-content col-md-8 col-md-push-1">
+        <div class="page-header"><h2>Why visualization?</h2></div>
+        <div class="content col-md-12">
+            <p> In the field of data visualization, it is believed that visual techniques used to represent and present data are able to make full use of the human eyes’ broad bandwidth pathway, and make it possible for people to see and to interpret large amounts of information at once <a href="about.html#path">(Thomas & Cook, 2005)</a>.</p>
+            <div class="col-md-6">
+                <a href="http://www.visualizing.org/embedded/58323"><img src="media/whydatavisulization-pic.jpg" class="img-responsive"></a>
+            </div>
+            <div class="col-md-6">
+             <p> The image at the left is an example of data visualization in the form of map (click on to view the original graph), it indicates the number of reported corruptions in the world in 2013. In this map, yellow indicates a lower level of corruption, while rose indicates a higher level, (white areas stand for not recorded).</p>
+             <p> From this map, we could immediately see that which countries have the highest corruptions reported.</p>
+             <p>Imagine, if the table is used to represent these data, how would it look like? One thing for sure is that it would definitely take longer time for the audience to understand the information.</p>
+            </div>
+             <p>One of the most compelling arguments for the value of data visualization is expressed in this quote from John.W.Tukey <a href="about.html#tukey">(1997)</a>:</p>
+             <blockquote>The greatest value of a picture is when it forces us to notice what we never expected to see.</blockquote>
+             <p>Through visualization, we are seeking to portray data in ways that allow us to see it in a new light, to visually observe patterns, exceptions, and the possible stories that sit behind its raw state. This is about considering visualization as a tool for discovery<a href="about.html#success">(Kirk, 2012)</a>.</p>
+
+            </p>
+        </div>
+
+    </div>
+    <div class="sidebar content col-md-2 col-md-push-1">
+        <div class="popover-content well col-sm-12">
+            <h3>Do you know?</h3>
+            <p>Nowadays, there are many organizations who have published their data to the public. Especially government are making huge amount of data available.</p>
+            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                Interested? </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="close"data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Answer:</h4>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <h1><a href="sites.html#opendata">Here</a> are several open data sources where you can find free open data to download. </h1>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Site tags</h3>
+            <small>use them to explore this site!</small>
+            <h2><a target="_blank" href="sites.html#opendata">open data</a></h2>
+            <h4><a target="_blank" href="visual-variables.html">visual variables</a></h4>
+            <h2><a target="_blank" href="bigdata-and-datavisualization.html">big data</a></h2>
+            <h3><a target="_blank" href="tree-map.html">Tree map</a></h3>
+            <h3><a target="_blank" href="books.html#tableau">Tableau</a></h3>
+            <h4><a target="_blank" href="books.html#D3">D3.js</a></h4>
+            <h3><a target="_blank" href="network-data.html">network data</a></h3>
+            <h4><a target="_blank" href="about.html">Bootstrap</a></h4>
+            <h4><a target="_blank" href="why-visualization.html">eyes</a></h4>
+        </div>
+    </div>
+
+    </div>
+</div>
+<footer class="text-center">
+    <small class="text-muted">Designed by Qian Yang for LIBR 500 - Foundations of Information Technology</small>
+</footer>
+</body>
+</html>
