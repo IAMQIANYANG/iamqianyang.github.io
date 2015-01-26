@@ -17,6 +17,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top ">
@@ -31,7 +33,7 @@
                 <ul class="nav navbar-nav" id = "topNav">
                     <li class="active"><a href="#">About</a></li>
                     <li><a href="#works">Works</a></li>
-                    <li> <div class="navbar-brand">Qian's Portofolio</div></li>
+                    <li> <p id="title">Qian's Portfolio<p></li>
                     <li><a href="#me">Me</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -127,6 +129,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/qian.js"></script>
    <!--scroll to -->
     <script>
         $('#topNav').onePageNav({
@@ -134,7 +137,6 @@
             changeHash: true,
             scrollSpeed: 800
         });
-        console.log("fjeow");
 
         $('#d1, #d2, #d3, #d4').contenthover({
             overlay_background:'#03C9A9',
