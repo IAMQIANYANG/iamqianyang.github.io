@@ -1,0 +1,75 @@
+/*! Copyright @ Qian Yang pandachain731@gmail.com */
+
+/*! navbar*/
+
+#topNav{
+    float: none;
+    margin: 0 auto;
+    display: table;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    font-size:20px;
+}
+
+/*!navbar-brand*/
+.navbar-brand {
+    font-family: cursive;
+    color:#03C9A9;
+    font-size:24px;
+    line-height: 30px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #777;
+}
+/*!end navbar-brand*/
+
+
+.navbar-nav > li > a {
+    font-family:cursive;
+    color:#BDC3C7;
+    line-height: 30px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+    font-family:cursive;
+    color:#03C9A9;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #03C9A9;
+    background-color: #ffffff;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color:#03C9A9;
+}
+
+p{
+    font-family: Calibri,Verdana,sans-serif;
+    font-size:18px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: cursive;
+    color:#03C9A9;
+}
+
+/*!contentHover */
+
+.contenthover { padding:20px 20px 10px 20px; }
+.contenthover, .contenthover h3, contenthover a { color:#fff; }
+.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.contenthover a.mybutton:hover { background:#34742d }

@@ -4,29 +4,112 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qian's Portofolio</title>
+    <link rel="shortcut icon" href="q.ico" />
 
-    <link rel="shortcut icon" href="datavis.ico" />
-    <title>coming soon...</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/datavis.css">
-    <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/QianPorto.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top ">
+        <div class="container">
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav" id = "topNav">
+                    <li class="active"><a href="#">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li> <div class="navbar-brand">Qian's Portofolio</div></li>
+                    <li><a href="#me">Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div> <!-- end navHeaderCollapse -->
+        </div> <!-- end container -->
+    </div> <!-- end navbar -->
+
+
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Welcome!</h2>
+                <p></p>
+            </div>
+        </div> <!--end row about -->
+    </div><!-- end container -->
+
+    <div class="container" id="works">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-3  col-sm-5  works-item" >
+                    <img id="d1" src="img/test.jpg" />
+                    <div class="contenthover img-responsive">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+                            <p><a href="#" class="mybutton">Lorem ipsum</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-5 col-sm-offset-1 works-item ">
+                     <img id="d2" src="img/test.jpg"  />
+                    <div class="contenthover img-responsive">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+                            <p><a href="#" class="mybutton">Lorem ipsum</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-5 works-item">
+                    <img id="d3" src="img/test.jpg"  />
+                    <div class="contenthover">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+                            <p><a href="#" class="mybutton">Lorem ipsum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div><!--end row -->
+    </div><!-- end container -->
+    <div id="me">
+    </div>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Contact information</h2>
+                <p>I'm currently a first year graduate student at the <a href="http://slais.ubc.ca/" target="_blank"> iSchool@UBC </a> (expected to graduate in May, 2016).</p>
+                <p>I'm glad to be contacted concerning co-op, internship and freelance opportunities.</p>
+                <p>Email: <a href="mailto:qianyang731@gmail.com">qianyang731@gmail.com</a></p>
+                <p>Linkedin <a href="http://ca.linkedin.com/in/qianyang731" target="_blank">Qian Yang</a></p>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+   <!--scroll to -->
+    <script>
+        $('#topNav').onePageNav({
+            currentClass: "active",
+            changeHash: true,
+            scrollSpeed: 800
+        });
+        console.log("fjeow");
 
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-</head>
-
-<body>
-
-<h2>
-coming soon 
-</h2>
+        $('#d1, #d2, #d3, #d4').contenthover({
+            overlay_background:'#03C9A9',
+            overlay_opacity:0.8
+        });
+    </script>
 
 </body>
 </html>
