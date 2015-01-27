@@ -80,3 +80,47 @@ img.bio{
     margin: 0 auto;
     display: table;
 }
+
+
+.grass__back, .grass__medium, .grass__front {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*background-size: 101% !important;*/
+}
+@media (max-width: 600px) {
+    .grass__back, .grass__medium, .grass__front {
+        height: 8%;
+    }
+}
+@media (min-width: 601px) and (max-width: 1100px) {
+    .grass__back, .grass__medium, .grass__front {
+        height: 14%;
+    }
+}
+@media (min-width: 1101px) {
+    .grass__back, .grass__medium, .grass__front {
+        height: 18%;
+    }
+}
+
+.grass__back {
+    background-image: url("../img/grass-back.svg");
+    -webkit-animation: left linear 25s infinite;
+}
+
+.grass__medium {
+    background-image: url("../img/grass-medium.svg");
+}
+
+.grass__front {
+    background: url("../img/grass-front.svg") repeat-x;
+    -webkit-animation: left linear 10s infinite alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes left {
+    from { background-position:  0 0; }
+    to { background-position: 102% 0; }
+}
+
