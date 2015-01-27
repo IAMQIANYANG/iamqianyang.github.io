@@ -124,3 +124,21 @@ img.bio{
     to { background-position: 102% 0; }
 }
 
+.topspace{
+    margin-top:100px;
+}
+
+.middlespace{
+    height:40px;
+
+}
+
+.bodywork{
+    background:#03C9A9;
+
+}
+
+.exit{
+    float:right;
+    margin-right: 30px;
+}
