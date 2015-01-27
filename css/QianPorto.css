@@ -86,7 +86,8 @@ img.bio{
     position: fixed;
     bottom: 0;
     width: 100%;
-    /*background-size: 101% !important;*/
+    z-index: 10000;
+
 }
 @media (max-width: 600px) {
     .grass__back, .grass__medium, .grass__front {
@@ -105,23 +106,24 @@ img.bio{
 }
 
 .grass__back {
-    background-image: url("../img/grass-back.svg");
-    -webkit-animation: left linear 25s infinite;
+    background: url("../img/grass-back.svg");
+    -webkit-animation: left linear 60s infinite alternate;
+
 }
 
 .grass__medium {
-    background-image: url("../img/grass-medium.svg");
+    background: url("../img/grass-medium.svg");
 }
 
 .grass__front {
-    background: url("../img/grass-front.svg") repeat-x;
-    -webkit-animation: left linear 10s infinite alternate;
+    background: url("../img/grass-front.svg");
+    -webkit-animation: left linear 30s infinite alternate;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes left {
     from { background-position:  0 0; }
-    to { background-position: 102% 0; }
+    to { background-position: 100% 0; }
 }
 
 .topspace{
