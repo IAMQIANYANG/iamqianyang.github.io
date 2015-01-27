@@ -3,7 +3,7 @@ $(document).ready(function () {
     var width = title.width();
     title.mouseover(function () {
         title.fadeOut(500, function () {
-            title.text('Welcome').css("color", "red").fadeIn(500);
+            title.text('Welcome').css("color", "#F2784B").fadeIn(500);
         });
     });
 
@@ -19,9 +19,10 @@ $(document).ready(function () {
         scrollSpeed: 800
     });
 
-    $('#d1, #d2, #d3, #d4').contenthover({
+    $('#d1, #d2, #d3, #d4,#d5,#d6 ').contenthover({
         overlay_background: '#03C9A9',
         overlay_opacity: 0.8
     });
 
 });
+

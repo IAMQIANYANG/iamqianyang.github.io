@@ -16,11 +16,12 @@
 }
 
 #title {
-    padding:15px;
-    font-size:24px;
-    line-height: 30px;
-    width:190px;
+    padding:0px;
+    font-size:40px;
+    width:300px;
     text-align: center;
+    float:inherit;
+    color:#03C9A9;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -70,10 +71,13 @@ h3 {
 /*!contentHover */
 
 .contenthover { padding:20px 20px 10px 20px; }
-.contenthover, .contenthover h3, contenthover a { color:#fff; }
+.contenthover, .contenthover h4, contenthover a { color:#000000; }
 .contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
-.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-.contenthover a.mybutton:hover { background:#34742d }
+.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#F2784B; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; text-decoration: none; }
+.contenthover a.mybutton:hover { background:#F2784B }
+.contenthover .mybutton{
+    float:right;
+}
 
 img.bio{
     float: none;
@@ -143,4 +147,13 @@ img.bio{
 .exit{
     float:right;
     margin-right: 30px;
+}
+
+#title{
+    font-size: 24px;
+    color:#03C9A9;
+}
+
+#home{
+    height: 400px;
 }
