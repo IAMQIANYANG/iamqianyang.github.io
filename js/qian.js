@@ -19,10 +19,15 @@ $(document).ready(function () {
         scrollSpeed: 800
     });
 
-    $('#d1, #d2, #d3, #d4,#d5,#d6 ').contenthover({
-        overlay_background: '#03C9A9',
-        overlay_opacity: 0.8
-    });
+    $(".works-item").hover(
+        function () {
+            $(".contenthover", this).fadeIn();
+            $("img",this).fadeTo(500, 0.3);
+        },
+        function () {
+            $(".contenthover", this).fadeOut();
+            $("img", this).fadeTo(500, 1);
+        });
 
 });
 
