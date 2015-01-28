@@ -2,6 +2,10 @@
 
 /*! navbar*/
 
+body > div.navbar.navbar-default.navbar-fixed-top{
+    background-color: transparent;
+}
+
 #topNav {
     float: none;
     margin: 0 auto;
@@ -9,9 +13,8 @@
 }
 
 .navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    font-size: 20px;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 #title {
@@ -25,34 +28,48 @@
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #777;
+    color: #EC407A;
 }
 
 /*!end navbar-brand*/
 
+#topNav > li.active > a{
+   font-family: 'Gloria Hallelujah', Calibri,sans-serif;
+    font-size:26px;
+    color: #757575;
+}
+
+#topNav > li > a{
+    font-family: 'Gloria Hallelujah',Calibri,sans-serif;
+    font-size:26px;
+    color: #757575;
+}
+
+
+
 .navbar-nav > li > a {
-    font-family: cursive;
-    color: #BDC3C7;
+    font-family: 'Gloria Hallelujah',Calibri,sans-serif;
+    color: #EC407A;
     line-height: 30px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    font-family: cursive;
-    color: #03C9A9;
+    font-family: 'Gloria Hallelujah',Calibri,sans-serif;
+    color: #EC407A;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #03C9A9;
-    background-color: #ffffff;
+    color: #EC407A;
+    background-color: transparent;
 }
 
 a,
 a:visited {
     text-decoration: none;
-    color: #03C9A9;
+    color: #EC407A;
 }
 
 p {
@@ -63,7 +80,7 @@ p {
 h1,
 h2,
 h3 {
-    font-family: cursive;
+    font-family:Calibri, Verdana, sans-serif;
     color: #03C9A9;
 }
 
@@ -75,6 +92,10 @@ h3 {
 .middlespace {
     height: 40px;
 
+}
+
+.bottomspace {
+    margin-bottom:100px;
 }
 
 .bodywork {
@@ -109,8 +130,8 @@ img.bio {
     top: 0;
     display: none;
     background-color: rgba(3, 201, 169, .5);
-    width: 250px;
-    height: 200px;
+    width: 90%;
+    height: 100%;
 }
 
 .contenthover, .contenthover h4, .contenthover a {
@@ -135,10 +156,6 @@ img.bio {
     text-decoration: none;
 }
 
-.img img {
-    width: 250px;
-    height: 200px;
-}
 
 /*Grasswork*/
 .grass__back, .grass__medium, .grass__front {
@@ -225,5 +242,19 @@ img.bio {
     z-index: -1;
     background: url("../img/cloud.svg") no-repeat;
     background-size: cover;
+}
+
+#home,#me{;
+    background: white;
+
+}
+
+#works,#contact {
+    background:white;
+}
+
+.works-item{
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
