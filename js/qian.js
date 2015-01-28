@@ -22,12 +22,22 @@ $(document).ready(function () {
     $(".works-item").hover(
         function () {
             $(".contenthover", this).fadeIn();
-            $("img",this).fadeTo(500, 0.3);
+            $("img", this).fadeTo(500, 0.3);
         },
         function () {
             $(".contenthover", this).fadeOut();
             $("img", this).fadeTo(500, 1);
         });
+
+    //$(window).scroll(function () {
+    //    console.log($(window).scrollTop());
+    //    if ($(window).scrollTop() > 00) {
+    //        $(".cloud").offset({
+    //            top: $(window).scrollTop()-00,
+    //            left: $(window).scrollTop()-00
+    //        }, 20000)
+    //    }
+    //});
 
 });
 

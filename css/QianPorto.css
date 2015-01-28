@@ -67,8 +67,42 @@ h3 {
     color: #03C9A9;
 }
 
-/*!contentHover */
 
+.topspace {
+    margin-top: 100px;
+}
+
+.middlespace {
+    height: 40px;
+
+}
+
+.bodywork {
+    background: #03C9A9;
+
+}
+
+.exit {
+    float: right;
+    margin-right: 30px;
+}
+
+#title {
+    font-size: 24px;
+    color: #03C9A9;
+}
+
+#home {
+    height: 400px;
+}
+
+img.bio {
+    float: none;
+    margin: 0 auto;
+    display: table;
+}
+
+/*!contentHover */
 .contenthover {
     padding: 20px 20px 10px 20px;
     position: absolute;
@@ -106,13 +140,7 @@ h3 {
     height: 200px;
 }
 
-
-img.bio {
-    float: none;
-    margin: 0 auto;
-    display: table;
-}
-
+/*Grasswork*/
 .grass__back, .grass__medium, .grass__front {
     position: fixed;
     bottom: 0;
@@ -141,8 +169,7 @@ img.bio {
 
 .grass__back {
     background: url("../img/grass-back.svg");
-    -webkit-animation: left linear 60s infinite alternate;
-
+    -webkit-animation: grass linear 120s infinite alternate;
 }
 
 .grass__medium {
@@ -151,11 +178,11 @@ img.bio {
 
 .grass__front {
     background: url("../img/grass-front.svg");
-    -webkit-animation: left linear 30s infinite alternate;
+    -webkit-animation: grass linear 60s infinite alternate;
 }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes left {
+@-webkit-keyframes grass {
     from {
         background-position: 0 0;
     }
@@ -164,30 +191,39 @@ img.bio {
     }
 }
 
-.topspace {
-    margin-top: 100px;
+
+#cloud1{
+    top:700px;
+    left:0;
+    width: 140px;
+    height:100px;
 }
 
-.middlespace {
-    height: 40px;
-
+#cloud2{
+    top:600px;
+    left:-80px;
+    width: 240px;
+    height:200px;
 }
 
-.bodywork {
-    background: #03C9A9;
-
+#cloud3{
+    top:800px;
+    left:20px;
+    width: 340px;
+    height:300px;
 }
 
-.exit {
-    float: right;
-    margin-right: 30px;
+#cloud4{
+    top:890px;
+    left:-80px;
+    width: 140px;
+    height:100px;
 }
 
-#title {
-    font-size: 24px;
-    color: #03C9A9;
+.cloud{
+    position: absolute;
+    z-index: -1;
+    background: url("../img/cloud.svg") no-repeat;
+    background-size: cover;
 }
 
-#home {
-    height: 400px;
-}
