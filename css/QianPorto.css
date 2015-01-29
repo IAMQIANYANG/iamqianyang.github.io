@@ -20,11 +20,13 @@ body > div.navbar.navbar-default.navbar-fixed-top {
 #title {
     padding: 0px;
     font-size: 40px;
-    width: 300px;
+    width: 500px;
     text-align: center;
     float: inherit;
     color: #03C9A9;
+    font-family: 'Gloria Hallelujah', cursive;
 }
+
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -36,7 +38,7 @@ body > div.navbar.navbar-default.navbar-fixed-top {
 #topNav > li.active > a {
     font-family: 'Gloria Hallelujah', Calibri, sans-serif;
     font-size: 26px;
-    color: #757575;
+    color: #EC407A;
 }
 
 #topNav > li > a {
@@ -76,8 +78,14 @@ p {
 }
 
 h1,
-h2,
-h3 {
+h2 {
+    font-family: 'Gloria Hallelujah', Calibri, sans-serif;
+    color: #03C9A9;
+    text-align: center;
+}
+
+h3,
+h4{
     font-family: Calibri, Verdana, sans-serif;
     color: #03C9A9;
 }
@@ -103,12 +111,9 @@ h3 {
 .exit {
     float: right;
     margin-right: 30px;
+    margin-top:30px;
 }
 
-#title {
-    font-size: 24px;
-    color: #03C9A9;
-}
 
 #home {
     height: 400px;
@@ -248,5 +253,38 @@ img.bio {
 
 .img img{
     width:100%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+#appSlideshow{
+    height:500px;
+}
+
+.carousel-indicators .active{
+    background-color: #EC407A;
+}
+
+.carousel-indicators li{
+    border: 1px solid #03C9A9;
+}
+
+ol.carousel-indicators{
+    margin-bottom: -60px;
+}
+
+#sun{
+    width:200px;
+    height:200px;
+    color:#F5D76E;
+    background-color: #F5D76E;
+    border-radius: 50%;
 }
 

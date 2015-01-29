@@ -3,13 +3,13 @@ $(document).ready(function () {
     var width = title.width();
     title.mouseover(function () {
         title.fadeOut(500, function () {
-            title.text('Welcome').css("color", "#F2784B").fadeIn(500);
+            title.text('Welcome').css("color", "#EC407A").fadeIn(500);
         });
     });
 
     title.mouseleave(function () {
         title.fadeOut(500, function () {
-            title.text("Qian's Portfolio").css("color", "black").fadeIn(500);
+            title.text("Qian's Portfolio").css("color", "#03C9A9").fadeIn(500);
         });
     });
 
@@ -36,4 +36,5 @@ $(document).ready(function () {
     )
 
 });
+
 
