@@ -29,15 +29,11 @@ $(document).ready(function () {
             $("img", this).fadeTo(500, 1);
         });
 
-    //$(window).scroll(function () {
-    //    console.log($(window).scrollTop());
-    //    if ($(window).scrollTop() > 00) {
-    //        $(".cloud").offset({
-    //            top: $(window).scrollTop()-00,
-    //            left: $(window).scrollTop()-00
-    //        }, 20000)
-    //    }
-    //});
+    $(".works-item").click(
+        function(){
+            window.open($("a", this).attr('href'));
+        }
+    )
 
 });
 

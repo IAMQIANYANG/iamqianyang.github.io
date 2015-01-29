@@ -2,7 +2,7 @@
 
 /*! navbar*/
 
-body > div.navbar.navbar-default.navbar-fixed-top{
+body > div.navbar.navbar-default.navbar-fixed-top {
     background-color: transparent;
 }
 
@@ -33,29 +33,27 @@ body > div.navbar.navbar-default.navbar-fixed-top{
 
 /*!end navbar-brand*/
 
-#topNav > li.active > a{
-   font-family: 'Gloria Hallelujah', Calibri,sans-serif;
-    font-size:26px;
+#topNav > li.active > a {
+    font-family: 'Gloria Hallelujah', Calibri, sans-serif;
+    font-size: 26px;
     color: #757575;
 }
 
-#topNav > li > a{
-    font-family: 'Gloria Hallelujah',Calibri,sans-serif;
-    font-size:26px;
+#topNav > li > a {
+    font-family: 'Gloria Hallelujah', Calibri, sans-serif;
+    font-size: 26px;
     color: #757575;
 }
-
-
 
 .navbar-nav > li > a {
-    font-family: 'Gloria Hallelujah',Calibri,sans-serif;
+    font-family: 'Gloria Hallelujah', Calibri, sans-serif;
     color: #EC407A;
     line-height: 30px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    font-family: 'Gloria Hallelujah',Calibri,sans-serif;
+    font-family: 'Gloria Hallelujah', Calibri, sans-serif;
     color: #EC407A;
 }
 
@@ -80,10 +78,9 @@ p {
 h1,
 h2,
 h3 {
-    font-family:Calibri, Verdana, sans-serif;
+    font-family: Calibri, Verdana, sans-serif;
     color: #03C9A9;
 }
-
 
 .topspace {
     margin-top: 100px;
@@ -95,7 +92,7 @@ h3 {
 }
 
 .bottomspace {
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
 .bodywork {
@@ -130,11 +127,12 @@ img.bio {
     top: 0;
     display: none;
     background-color: rgba(3, 201, 169, .5);
-    width: 90%;
     height: 100%;
+    width: calc(100% - 30px);
+    cursor: pointer;
 }
 
-.contenthover, .contenthover h4, .contenthover a {
+.contenthover, .contenthover h4 {
     color: #000000;
 }
 
@@ -144,23 +142,14 @@ img.bio {
     padding: 0;
 }
 
-.contenthover a.mybutton {
-    display: block;
-    float: left;
-    padding: 5px 10px;
-    background: #F2784B;
-    color: #fff;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    text-decoration: none;
+.contenthover a {
+    display: none;
 }
-
 
 /*Grasswork*/
 .grass__back, .grass__medium, .grass__front {
     position: fixed;
-    bottom: 0;
+    bottom: -2px;
     width: 100%;
     z-index: 10000;
 
@@ -208,53 +197,56 @@ img.bio {
     }
 }
 
-
-#cloud1{
-    top:700px;
-    left:0;
+#cloud1 {
+    top: 700px;
+    left: 0;
     width: 140px;
-    height:100px;
+    height: 100px;
 }
 
-#cloud2{
-    top:600px;
-    left:-80px;
+#cloud2 {
+    top: 600px;
+    left: -80px;
     width: 240px;
-    height:200px;
+    height: 200px;
 }
 
-#cloud3{
-    top:800px;
-    left:20px;
+#cloud3 {
+    top: 800px;
+    left: 20px;
     width: 340px;
-    height:300px;
+    height: 300px;
 }
 
-#cloud4{
-    top:890px;
-    left:-80px;
+#cloud4 {
+    top: 890px;
+    left: -80px;
     width: 140px;
-    height:100px;
+    height: 100px;
 }
 
-.cloud{
+.cloud {
     position: absolute;
     z-index: -1;
     background: url("../img/cloud.svg") no-repeat;
     background-size: cover;
 }
 
-#home,#me{;
+#home, #me {;
     background: white;
 
 }
 
-#works,#contact {
-    background:white;
+#works, #contact {
+    background: white;
 }
 
-.works-item{
-    margin-top:20px;
+.works-item {
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.img img{
+    width:100%;
 }
 
