@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     $(".works-item").click(
         function(){
-            window.open($("a", this).attr('href'));
+            window.open($("a", this).attr('href'),"_self",true);
         }
     )
 
