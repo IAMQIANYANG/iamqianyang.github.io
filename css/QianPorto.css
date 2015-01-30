@@ -25,7 +25,6 @@ body > div.navbar.navbar-default.navbar-fixed-top {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-
 #selfIntro {
     display: block;
     margin-left: auto;
@@ -89,7 +88,7 @@ h2 {
 }
 
 h3,
-h4{
+h4 {
     font-family: Calibri, Verdana, sans-serif;
     color: #03C9A9;
 }
@@ -115,9 +114,8 @@ h4{
 .exit {
     float: right;
     margin-right: 30px;
-    margin-top:30px;
+    margin-top: 30px;
 }
-
 
 #home {
     height: 400px;
@@ -142,9 +140,21 @@ img.bio {
 }
 
 
+@media (max-width: 700px) {
+    .contenthover, .contenthover h4 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width:701px) {
+    .contenthover, .contenthover h4 {
+        font-size: 1.4em;
+    }
+}
+
 .contenthover, .contenthover h4 {
     color: #000000;
-    font-size:1.4em;
+
 }
 
 .contenthover h3, .contenthover p {
@@ -257,8 +267,8 @@ img.bio {
     margin-bottom: 20px;
 }
 
-.img img{
-    width:100%;
+.img img {
+    width: 100%;
 }
 
 .carousel-inner > .item > img {
@@ -270,26 +280,26 @@ img.bio {
     background-image: none;
 }
 
-#appSlideshow{
-    height:500px;
+#appSlideshow {
+    height: 500px;
 }
 
-.carousel-indicators .active{
+.carousel-indicators .active {
     background-color: #EC407A;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
     border: 1px solid #03C9A9;
 }
 
-ol.carousel-indicators{
+ol.carousel-indicators {
     margin-bottom: -60px;
 }
 
-#sun{
-    width:200px;
-    height:200px;
-    color:#F5D76E;
+#sun {
+    width: 200px;
+    height: 200px;
+    color: #F5D76E;
     background-color: #F5D76E;
     border-radius: 50%;
 }
