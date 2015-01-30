@@ -19,7 +19,7 @@ body > div.navbar.navbar-default.navbar-fixed-top {
 
 #title {
     font-size: 40px;
-    width: 600px;
+    width: 100%;
     text-align: center;
     color: #03C9A9;
     font-family: 'Gloria Hallelujah', cursive;
@@ -104,7 +104,7 @@ h4{
 }
 
 .bottomspace {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .bodywork {
