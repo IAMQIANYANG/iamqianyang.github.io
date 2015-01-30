@@ -18,15 +18,19 @@ body > div.navbar.navbar-default.navbar-fixed-top {
 }
 
 #title {
-    padding: 0px;
     font-size: 40px;
-    width: 500px;
+    width: 600px;
     text-align: center;
-    float: inherit;
     color: #03C9A9;
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+
+#selfIntro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -238,12 +242,12 @@ img.bio {
 }
 
 #home, #me {;
-    background: white;
+    background: transparent;
 
 }
 
 #works, #contact {
-    background: white;
+    background: transparent;
 }
 
 .works-item {
