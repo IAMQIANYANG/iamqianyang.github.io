@@ -196,7 +196,8 @@ img.bio {
 
 .grass__back {
     background: url("../img/grass-back.svg");
-    -webkit-animation: grass linear 120s infinite alternate;
+    -webkit-animation: grass linear 60s infinite alternate;
+    animation: grass linear 60s infinite alternate;
 }
 
 .grass__medium {
@@ -205,11 +206,22 @@ img.bio {
 
 .grass__front {
     background: url("../img/grass-front.svg");
-    -webkit-animation: grass linear 60s infinite alternate;
+    -webkit-animation: grass linear 30s infinite alternate;
+    animation: grass linear 30s infinite alternate;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes grass {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* ie */
+@keyframes grass {
     from {
         background-position: 0 0;
     }
