@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project: PhotoTag</title>
+    <link rel="shortcut icon" href="/Q.ico" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="photoTag.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2" id="left"></div>
+        <div class="col-md-5" id="middle"></div>
+        <div class="col-md-5" id="right"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2" id="hub">
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="visible-xs navbar-brand">Menu</span>
+                    </div>
+                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Untagged<span class="badge">35</span></a></li>
+                            <li><a href="tags.html">Manage Tags</a></li>
+                            <li><a href="#">Open Library</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div><!-- end hub -->
+
+        <div class="col-md-5" id="editArea">
+            <div class="row">
+                <div class="btn-group" id="listView" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-bars"></i>
+                        By Name
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">By date</a></li>
+                    </ul>
+                </div>
+                <div class="input-group" id="overviewSearch">
+                    <input type="text" class="form-control" placeholder="search photo">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                </div><!-- /input-group -->
+            </div><!-- end row-->
+            <div class="row" style="height:30px"></div>
+            <div class="row">
+                <div class="col-md-3">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">clothes <span class="badge">100</span></button>
+                        <div id="demo1" class="collapse in">
+                            <div class="panel-group" id="accordion1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">bottom <span class="badge">30</span></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse11" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Denims</li>
+                                                <li>Pants</li>
+                                                <li>Shorts</li>
+                                                <li>Skirts</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">dress <span class="badge">20</span></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse12" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Dress</li>
+                                                <li>Jumpsuit</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">top <span class="badge">50</span></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse13" class="panel-collapse collapse">
+                                        <div class="panel-body"><ul>
+                                            <li>Camisoles & Bare Tops</li>
+                                            <li>Cardigans</li>
+                                            <li>Knitwear</li>
+                                            <li>Shirts & Blouses</li>
+                                            <li>Sweatshirts</li>
+                                            <li>T-shirts</li>
+                                        </ul></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div><!-- end col-md-3 -->
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo2">color <span class="badge">80</span></button>
+                    <div id="demo2" class="collapse in">
+                        <ul>
+                            <li>Black</li>
+                            <li>Blue</li>
+                            <li>Ginger</li>
+                            <li>Gray</li>
+                            <button id="green" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                <p>• green</p>
+                                <p>• Green</p>
+                            </button>
+                            <ul id="merge" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">merge</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">delete</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">edit</a></li>
+                            </ul>
+                            <li>Red</li>
+                            <li>White</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo3">season <span class="badge">85</span></button>
+                    <div id="demo3" class="collapse in">
+                        <ul>
+                            <li>autumn</li>
+                            <li>spring</li>
+                            <li>summer</li>
+                            <li>winter</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">style <span class="badge">50</span></button>
+                    <div id="demo4" class="collapse in">
+                        <ul>
+                            <li>business</li>
+                            <li>casual</li>
+                            <li>party</li>
+                            <li>sports</li>
+                            <li>travel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#">tagName</button>
+                </div>
+
+
+            </div><!-- end row-->
+        </div> <!-- end editArea-->
+
+        <div class="col-md-5" id="overview">
+            <div id="overviewNav">
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    top
+                </div>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    spring
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(34).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(21).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(26).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(1).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(2).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(9).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(10).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(12).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(13).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(19).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(20).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 small-images thumbnail">
+                <img src="img/pic%20(23).jpg" class="img-responsive"/>
+                <div class="caption">
+                    <p>coat, denim, spring</p>
+                </div>
+            </div>
+
+        </div> <!-- end overview -->
+
+
+    </div> <!-- end row-->
+</div><!-- end container-fluid-->
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="photoTagScript.js"></script>
+</html>
