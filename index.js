@@ -12,7 +12,7 @@ $(window).scroll(function () {
     // $('.navigation a[href*=id]').removeClass('active');
 
     if (position >= target) {
-      console.log(11);
+      console.log(11);0
       $('.navigation a[href*=id]').addClass('active');
 
     }
