@@ -1,5 +1,5 @@
 body {
-    background: #FFFFFF;
+    background: #fcf8f7;
     font-family: 'Roboto', sans-serif;
     margin:0;
 
@@ -27,7 +27,7 @@ body {
 
 
 .navigation {
-    background: #FFFFFF;
+    background: #fcf8f7;
     list-style: none;
     margin: 0;
     padding:0;
@@ -55,7 +55,7 @@ body {
 }
 
 .navigation a:hover {
-    border-bottom: 1px solid #D2527F;
+    border-bottom: 1px solid #4ECDC4;
 
 }
 
@@ -101,7 +101,7 @@ body {
 #header{
     width:100%;
     height: 130px;
-    background: #D2527F;
+    background: #4ECDC4;
     padding-top:15px;
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 #about p{
-    border-bottom: 1px solid #D2527F;
+    border-bottom: 1px solid #4ECDC4;
     padding-bottom:10px;
 }
 
@@ -127,13 +127,13 @@ body {
 
 .filter p {
     padding: 5px 20px;
-    background: #F1A9A0;
+    background: #A2DED0;
     margin: 0 10px;
 
 }
 
 .selected {
-    background: #D2527F !important;
+    background: #4ECDC4 !important;
 }
 
 .hide {
@@ -157,7 +157,7 @@ body {
 
 .project-item {
     /*box-shadow: 2px 2px 2px 2px #BDC3C7;*/
-    border: 1px solid #D2527F;
+    border: 1px solid #4ECDC4;
     padding: 0;
     width: 250px;
     height: 350px;
@@ -197,7 +197,7 @@ body {
 
 }
 .project-link{
-    border-top: 1px solid black;
+    border-top: 1px solid #4ECDC4;
     padding-top:15px;
     margin: 10px 0 0 0;
     font-size: 1em;
@@ -227,11 +227,11 @@ body {
 }
 
 #contact a{
-    color: #D2527F;
+    color: #4ECDC4;
 }
 
 .active{
-    border-bottom: 1px solid #D2527F;
+    border-bottom: 1px solid #4ECDC4;
 }
 
 /*bubble animation*/
@@ -257,13 +257,13 @@ body {
 .bubble {
     width: 50px;
     height: 50px;
-    border: 1px solid #D2527F;
+    border: 1px solid #4ECDC4;
     border-radius: 200px;
 
 }
 
 .x1{
-    border-color:#F2784B;
+    border-color:#F5D76E;
     transform: scale(0.9);
     -webkit-animation: moveclouds 30s linear infinite, sideWays 2s ease-in-out infinite alternate;
     -moz-animation: moveclouds 30s linear infinite, sideWays 2s ease-in-out infinite alternate;
@@ -272,6 +272,7 @@ body {
 }
 
 .x2 {
+    border-color:#F64747;
     transform: scale(0.6);
     -webkit-animation: moveclouds 100s linear infinite, sideWays 5s ease-in-out infinite alternate;
     -moz-animation: moveclouds 100s linear infinite, sideWays 5s ease-in-out infinite alternate;
@@ -284,14 +285,14 @@ body {
     -o-animation: moveclouds 90s linear infinite, sideWays 4s ease-in-out infinite alternate;
 }
 .x4 {
-    border-color:#81CFE0;
+    border-color:#E08283;
     transform: scale(0.75);
     -webkit-animation: moveclouds 80s linear infinite, sideWays 2s ease-in-out infinite alternate;
     -moz-animation: moveclouds 80s linear infinite, sideWays 2s ease-in-out infinite alternate;
     -o-animation: moveclouds 80s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 .x5 {
-    border-color:#F5D76E;
+    border-color:#59ABE3;
     transform: scale(0.8);
     -webkit-animation: moveclouds 70s linear infinite, sideWays 100s ease-in-out infinite alternate;
     -moz-animation: moveclouds 70s linear infinite, sideWays 100s ease-in-out infinite alternate;
