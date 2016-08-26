@@ -2,20 +2,67 @@
  * Created by pandachain on 2016-08-24.
  */
 
-$(window).scroll(function () {
-  var position = $(this).scrollTop();
+let filters = document.querySelectorAll('.filter p');
+let frontEndProjects = document.querySelectorAll('.front-end');
+let uxProjects = document.querySelectorAll('.ux');
+let allProjects = [];
 
-  $('.section').each(function() {
-    var target = $(this).offset().top + 62;
+let addAllProjects = function(){
+  for (let i =0; i < frontEndProjects.length; i++){
+    allProjects.push(frontEndProjects[i])
+  }
 
-    var id = $(this).attr('id');
-    // $('.navigation a[href*=id]').removeClass('active');
+  for (let i =0; i < uxProjects.length; i++){
+    allProjects.push(uxProjects[i])
+  }
+};
 
-    if (position >= target) {
-      console.log(11);0
-      $('.navigation a[href*=id]').addClass('active');
 
+
+let addFilterEventListener = function(){
+  for (let i = 0; i < filters.length; i++){
+    filters[i].addEventListener('click', function(){
+      removeHighlightAll();
+      this.classList.add('selected');
+      hideAll();
+      filterProjects(this.textContent);
+    })
+
+  }
+};
+
+let filterProjects = function(name){
+
+  if (name === 'all') {
+    for(let i = 0; i < allProjects.length; i++) {
+      allProjects[i].classList.remove('hide');
     }
-  });
+  }
 
-});
+  if (name === 'front-end'){
+    for (let i = 0; i < frontEndProjects.length; i++){
+      frontEndProjects[i].classList.remove('hide');
+    }
+  }
+
+  if (name === 'ux'){
+    for (let i = 0; i < uxProjects.length; i++){
+      uxProjects[i].classList.remove('hide');
+    }
+  }
+};
+
+addFilterEventListener();
+
+let hideAll = function(){
+  addAllProjects();
+  for (let i = 0; i < allProjects.length; i++){
+    allProjects[i].classList.add('hide');
+  }
+};
+
+let removeHighlightAll = function(){
+  for (let i = 0; i < filters.length; i++){
+    filters[i].classList.remove('selected');
+  }
+}
