@@ -2,6 +2,8 @@
  * Created by pandachain on 2016-08-24.
  */
 
+// filters
+
 let filters = document.querySelectorAll('.filter p');
 let frontEndProjects = document.querySelectorAll('.front-end');
 let uxProjects = document.querySelectorAll('.ux');
@@ -65,4 +67,24 @@ let removeHighlightAll = function(){
   for (let i = 0; i < filters.length; i++){
     filters[i].classList.remove('selected');
   }
-}
+};
+
+// scroll and highlight
+
+$(window).on("scroll", function() {
+
+  var currentPos = $(window).scrollTop() + 63;
+
+  $('.navigation li a:lt(3)').each(function() {
+    var menu = $(this);
+    var section = $(menu.attr('href'));
+    if(section.position().top <= currentPos && menu.offset().top + section.height() > currentPos){
+      $('.navigation li').removeClass('active');
+      menu.parent().addClass('active');
+    }
+    else {
+      menu.parent().removeClass('active');
+    }
+  });
+
+});
