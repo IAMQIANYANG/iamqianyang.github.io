@@ -355,3 +355,31 @@ body {
         margin-left:50px;
     }
 }
+
+
+#randomFact{
+    margin:auto;
+    width: 50%;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    text-align: center;
+    padding: 20px;
+
+}
+
+#randomFact p{
+    font-size: 20px;
+}
+
+
+#contact div:nth-child(3) p{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    width:300px;
+    margin:80px auto 50px auto;
+}
+

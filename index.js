@@ -73,7 +73,7 @@ let removeHighlightAll = function(){
 
 $(window).on("scroll", function() {
 
-  var currentPos = $(window).scrollTop() + 63;
+  var currentPos = $(window).scrollTop() + 70;
 
   $('.navigation li a:lt(3)').each(function() {
     var menu = $(this);
@@ -88,3 +88,17 @@ $(window).on("scroll", function() {
   });
 
 });
+
+// random facts
+let facts = [
+  '<p>Qian loves food and is a good cook.</p>',
+  '<p>Qian loves sports. She is Ajacied (Ik ben Ajacied!)</p>',
+  '<p>Qian jogges 3 times each week, 6.5KM each time; Sometimes 10KM (about 6m10s/KM).</p>', 
+  '<p>Qian loves books. She reads all genres. She is heavily influenced by Existentialism, and loves Existentialist literature.</p>',
+  '<p>Qian admires <a href="https://en.wikipedia.org/wiki/Wang_Yangming" target="_blank">Wang Yangming</a>.</p>',
+  '<p>Qian loves <a href="https://en.wikipedia.org/wiki/Ci_(poetry)" target="_blank">Ci</a>, her favorite poet is <a href="https://en.wikipedia.org/wiki/Xin_Qiji">Xin Qiji</a>, and she wrote her own poems as well.</p>',
+  '<p>Qian loves anmie and manga!</p>'
+];
+
+let randomFactDiv = document.querySelector('#randomFact');
+randomFactDiv.innerHTML  = facts[Math.floor(Math.random() * facts.length)];
