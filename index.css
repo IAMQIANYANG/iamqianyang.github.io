@@ -13,8 +13,10 @@ body {
 
 .section h1{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-bottom:100px;
 }
+
 /* navbar */
 
 #navbar{
@@ -44,7 +46,6 @@ body {
 
 .navigation a {
     text-decoration: none;
-    width:80px;
     text-align: center;
     display: block;
     padding: 1em;
@@ -99,21 +100,43 @@ body {
     text-align: center;
 }
 #header{
-    width:100%;
     height: 130px;
-    background: #4ECDC4;
     padding-top:15px;
+    margin-bottom:100px;
 }
 
 #header h2{
     margin:5px;
-    color: #F2F1EF;
     font-weight: 400;
 }
 
 #about p{
-    border-bottom: 1px solid #4ECDC4;
+    text-align: left;
+    font-size: 1.1em;
     padding-bottom:10px;
+}
+
+.divider {
+    border-bottom: 1px solid #4ECDC4;
+}
+
+
+/* highlights*/
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+    color: #4ECDC4;
+}
+
+.carousel-indicators .active {
+    background-color: #4ECDC4;
+}
+
+.item p{
+    font-size: 1.1em;
 }
 
 /* projects */
@@ -228,7 +251,7 @@ body {
     color: #4ECDC4;
 }
 
-.active{
+a .active{
     border-bottom: 1px solid #4ECDC4;
 }
 

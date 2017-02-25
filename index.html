@@ -8,17 +8,22 @@
     <title>Qian Yang Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/6a67bdc33d.js"></script>
 </head>
 <body>
 <div id="navbar">
     <ul class="navigation">
         <li><a href="#about">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#highlights">Project Highlights</a></li>
+        <li><a href="#projects">Other Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <!--<li><a href="https://iamqianyang.wordpress.com/">Blog</a></li>-->
     </ul>
 </div>
 
@@ -46,195 +51,321 @@
         </div>
 
     </div>
-    <div id="header">
-        <h2>Qian Yang</h2>
-        <p>_________________________</p>
-        <h2>Full stack web development</h2>
-    </div>
-    <p>I'm currently a UBC student in the program Master of Library and Information Studies (expected to graduate in December 2016). I'm looking for job opportunities as a full-stack web developer.</p>
-
-</div>
-
-<div class="section" id="projects">
-    <h1>Projects</h1>
-    <div class="filter">
-        <p class="selected">all</p>
-        <p>front-end</p>
-        <p>back-end</p>
-        <p>ux</p>
-    </div>
-    <div class="projects-container">
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/simon-game.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Simon Game</h4>
-                <p class="des">A memory game that requires the player to remember up to 20 color sequences.</p>
-                <p class="tools">Tools: vanilla JavaScript, object oriented programming</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/simon-game/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/simon-game" target="_blank">Source</a>
-            </div>
+    <div class="row divider">
+        <div id="header" class="col-md-6 col-md-offset-1">
+            <h2>Cheska (Qian) Yang's Portfolio</h2>
+            <h3>Web dev | Data analyst</h3>
         </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/tic-tac-toe.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Tic-tac-toe</h4>
-                <p class="des">A simple yet unbeatable tic-tac-toe game.</p>
-                <p class="tools">Tools: vanilla JavaScript, object oriented programming</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/tic-tac-toe/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/tic-tac-toe" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/pomodoro-clock.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Pomodoro Clock</h4>
-                <p class="des">A clock allowing a timer for a work session, and a timer for a break session.</p>
-                <p class="tools">Tools: vanilla JavaScript, object oriented programming</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/pomodoro-clock/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/pomodoro-clock" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/js-calculator.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Calculator</h4>
-                <p class="des">An Android-device-like calculator built with JavaScript.</p>
-                <p class="tools">Tools: vanilla JavaScript</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/js-calculator/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/js-calculator" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/local-weather.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Local Weather</h4>
-                <p class="des">An application showing the current weather of your location.</p>
-                <p class="tools">Tools: vanilla JavaScript, Open weather map API</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/local-weather/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/local-weather" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/wikipedia-viewer.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Wikipedia Viewer</h4>
-                <p class="des">An application allowing you to search and retrieve Wikipedia articles.</p>
-                <p class="tools">Tools: vanilla JavaScript, Wikipedia API</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/wikipedia-viewer/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/wikipedia-viewer" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/twitch-streamer.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Twitch Streamer</h4>
-                <p class="des">An application showing streamer information from Twitch.</p>
-                <p class="tools">Tools: vanilla JavaScript, Twitch API</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/twitch-streamer/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/twitch-streamer" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item front-end">
-            <div class="project-img">
-                <img src="project-img/random-quote.png">
-            </div>
-            <div class="project-intro">
-                <h4 class="title">Random Quotes</h4>
-                <p class="des">Generate random quotes from ancient Chinese philosopher LaoTzu.</p>
-                <p class="tools">Tools: Bootstrap, jQuery</p>
-            </div>
-            <div class="project-link">
-                <a href="https://iamqianyang.github.io/random-quote-laotzu/" target="_blank">Production</a><a
-                    href="https://github.com/IAMQIANYANG/random-quote-laotzu" target="_blank">Source</a>
-            </div>
-        </div>
-
-        <div class="project-item ux">
-            <iframe src="https://player.vimeo.com/video/167031484" width="250" height="150" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <div class="project-intro">
-                <h4 class="title">ShaReader</h4>
-                <p class="des">The design of a social ebook which facilitates deep reading and collaborative reading.</p>
-                <p class="tools">Tools: UX design, UX research, Axure</p>
-            </div>
-            <div class="project-link">
-                <a href="https://vimeo.com/167031484" target="_blank">Watch Video</a><a href="#" target="_blank">Learn
-                more</a>
-            </div>
-        </div>
-
-        <div class="project-item ux">
-            <iframe src="https://player.vimeo.com/video/180083378" width="250" height="150" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <div class="project-intro">
-                <h4 class="title">Tutor Max</h4>
-                <p class="des">The design of a mobile app which allows students and tutors to find each other.</p>
-                <p class="tools">Tools: UX design, UX research, UXPin</p>
-            </div>
-            <div class="project-link">
-                <a href="https://vimeo.com/180083378" target="_blank">Watch Video</a><a href="#" target="_blank">Learn
-                more</a>
-            </div>
+        <div class="col-md-3 col-md-pull-2">
+            <p>Hi there, welcome! I'm a web developer/data analyst living in Vancouver BC, Canada</p>
+            <p>I graduated from the master program Library and Information Studies at University of British Columbia in Dec.2016</p>
+            <p>I'm currently looking for full-time/contract opportunities in web development or data analysis.</p>
         </div>
     </div>
 </div>
 
-<div class="section" id="contact">
-    <h1>Contact</h1>
+<div class="container-fluid">
+    <div class="section" id="highlights">
+        <h1>Project Highlights</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-    <div id="socialMedia">
-        <h3>Qian is generally <em>not</em> active on social media. Yet you can still find her on:</h3>
-        <a href="https://ca.linkedin.com/in/qianyang731" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-        <a href="https://github.com/IAMQIANYANG" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-        <p>And: <a href="mailto:qianyang731@gmail.com?Subject=add%20subject" target="_blank">qianyang731@gmail.com</a></p>
-    </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="col-md-7">
+                        <img class="col-md-12 img-responsive" src="project-img/recipe-qoo.png" alt="Recipe Qoo">
+                    </div>
+                    <div class="highlights-intro col-md-5">
+                        <h3>Recipe Qoo</h3>
+                        <p>Deploy:
+                        <a href="https://recipe-qoo.firebaseapp.com/">https://recipe-qoo.firebaseapp.com/</a>
+                        </p>
+                        <p>Source:
+                        <a href="https://github.com/IAMQIANYANG/recipe-qoo">front-end</a>
+                        <a href="https://github.com/IAMQIANYANG/what-to-eat-backend">back-end</a>
+                        </p>
+                        <p>Recipe Qoo is a web application designed to help family cooks to store, manage, and share
+                            their
+                            recipes.</p>
+                        <p>More importantly, it is designed to help solve the ultimate question of life: <strong>What to
+                            eat?</strong> by picking a recipe for you.</p>
+                        <p>Recipe Qoo is currently at its v1 stage. The system randomly picks a recipe for you.
+                            Later on, more functions will be added including randomly select a recipe based on some
+                            criteria, such as ingredients.</p>
 
-    <div>
-        <p>One random fact about Qian (refresh if you're interested to know more :) )</p>
-        <div id="randomFact">
+                        <h4>Stacks</h4>
+                        <p>Front-end: Thick client with React.js + Redux + Bootstrap, hosted on firebase.</p>
+                        <p>Back-end: RESTful API with Node.js + Express.js, hosted on heroku.</p>
+                        <p>DataBase: MongoDB</p>
+                        <p>Auth: Passport-JWT</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-md-7">
+                        <img class="col-md-11 img-responsive" src="project-img/recipe-qoo.png" alt="Twitter spam detector">
+                    </div>
+                    <div class="highlights-intro col-md-5">
+                        <h3>Twitter Emotion Spam Detector</h3>
+                        <a href="https://recipe-qoo.firebaseapp.com/" target="_blank">https://recipe-qoo.firebaseapp.com/</a>
+                        <p>This is a group project for the course LIBR 559N - Text Analytics. The goal is to analyze and detect emotion
+                            spams (tweets assigned with a emotion hashtag but don’t actually express the emotion) on
+                            Twitter.</p>
+                        <p>Project involved in crawling data, labelling them, conducting an in-depth analysis, and
+                            building a machine learning model to identify the major emotion spams.</p>
+                        <p>My major role was to wrote code to normalize the crawled data, train the labelled data using
+                            the Support Vector Machine algorithm to identify future emotion spams (accuracy 88.13%).</p>
+
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="col-md-7">
+                        <img class="col-md-12 img-responsive" src="project-img/shareader.png" alt="ShaReader">
+                    </div>
+
+                    <div class="highlights-intro col-md-5">
+                        <h3>ShaReader - A social and interactive interface design for e-book</h3>
+                        <a href="https://vimeo.com/167031484" target="_blank">Click to watch a short intro video (2 mins)</a>
+                        <p>This is a work from a project for the course CPSC 554M - Research Topics in HCI.</p>
+
+                        <p>We designed and developed ShaReader, a high-fidelity prototype that facilitates annotation sharing in the digital reading
+
+                            environment,</p>
+                        <p>on the basis of our understanding of the potential users and tested it for its usefulness and usability. </p>
+
+                        <p> Results showed that ShaReader is able to facilitate social annotating with minimal distraction to the users. </p>
+                        <p>It also allows users to smoothly switch between the reading and the annotation viewing tasks. </p>
+                        <h4>Key words:</h4>
+                        <p>User experience design, User experience research, Prototype</p>
+                    </div>
+                </div>
+
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
         </div>
     </div>
-</div>
 
-<div class="footer">Copyright @ <a href="http://iamqianyang.github.io/" target="_blank"> Qian Yang </a></div>
+        <div class="section" id="projects">
+            <h1>Other Projects</h1>
+            <div class="filter">
+                <p class="selected">all</p>
+                <p>react</p>
+                <p>front-end</p>
+                <p>ux</p>
+            </div>
+
+            <div class="projects-container">
+                <div class="project-item react">
+                    <div class="project-img">
+                        <img src="project-img/fcc-leaderboard.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">FCC Leaderboard</h4>
+                        <p class="des">A dashboard displaying top users from free code camp. Support sorting.</p>
+                        <p class="tools">Tools: vanilla React, Lodash</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/freecodecamp-leaderboard/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/freecodecamp-leaderboard" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item react">
+                    <div class="project-img">
+                        <img src="project-img/markdown-previewer.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Markdown Previewer</h4>
+                        <p class="des">A very simple Markdown built with React.</p>
+                        <p class="tools">Tools: vanilla React</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/markdown-previewer/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/markdown-previewer" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/simon-game.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Simon Game</h4>
+                        <p class="des">A memory game that requires the player to remember up to 20 color sequences.</p>
+                        <p class="tools">Tools: vanilla JavaScript, object oriented programming</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/simon-game/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/simon-game" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/tic-tac-toe.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Tic-tac-toe</h4>
+                        <p class="des">A simple yet unbeatable tic-tac-toe game.</p>
+                        <p class="tools">Tools: vanilla JavaScript, object oriented programming</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/tic-tac-toe/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/tic-tac-toe" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/pomodoro-clock.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Pomodoro Clock</h4>
+                        <p class="des">A clock allowing a timer for a work session, and a timer for a break session.</p>
+                        <p class="tools">Tools: vanilla JavaScript, object oriented programming</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/pomodoro-clock/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/pomodoro-clock" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/js-calculator.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Calculator</h4>
+                        <p class="des">An Android-device-like calculator built with JavaScript.</p>
+                        <p class="tools">Tools: vanilla JavaScript</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/js-calculator/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/js-calculator" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/local-weather.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Local Weather</h4>
+                        <p class="des">An application showing the current weather of your location.</p>
+                        <p class="tools">Tools: vanilla JavaScript, Open weather map API</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/local-weather/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/local-weather" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/wikipedia-viewer.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Wikipedia Viewer</h4>
+                        <p class="des">An application allowing you to search and retrieve Wikipedia articles.</p>
+                        <p class="tools">Tools: vanilla JavaScript, Wikipedia API</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/wikipedia-viewer/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/wikipedia-viewer" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/twitch-streamer.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Twitch Streamer</h4>
+                        <p class="des">An application showing streamer information from Twitch.</p>
+                        <p class="tools">Tools: vanilla JavaScript, Twitch API</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/twitch-streamer/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/twitch-streamer" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item front-end">
+                    <div class="project-img">
+                        <img src="project-img/random-quote.png" class="img-responsive">
+                    </div>
+                    <div class="project-intro">
+                        <h4 class="title">Random Quotes</h4>
+                        <p class="des">Generate random quotes from ancient Chinese philosopher LaoTzu.</p>
+                        <p class="tools">Tools: Bootstrap, jQuery</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://iamqianyang.github.io/random-quote-laotzu/" target="_blank">Production</a><a
+                            href="https://github.com/IAMQIANYANG/random-quote-laotzu" target="_blank">Source</a>
+                    </div>
+                </div>
+
+                <div class="project-item ux">
+                    <iframe src="https://player.vimeo.com/video/180083378" width="250" height="150" frameborder="0"
+                            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div class="project-intro">
+                        <h4 class="title">Tutor Max</h4>
+                        <p class="des">The design of a mobile app which allows students and tutors to find each
+                            other.</p>
+                        <p class="tools">Tools: UX design, UX research, UXPin</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://vimeo.com/180083378" target="_blank">Watch Video</a><a href="#"
+                                                                                                target="_blank">Learn
+                        more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="contact">
+            <h1>Contact</h1>
+
+            <div id="socialMedia">
+                <h3>I'm generally <em>not</em> active on social media :). Yet you can still find me on:</h3>
+                <a href="https://ca.linkedin.com/in/cheskayang" target="_blank"><i class="fa fa-linkedin-square fa-3x"
+                                                                                   aria-hidden="true"></i></a>
+                <a href="https://github.com/IAMQIANYANG" target="_blank"><i class="fa fa-github-square fa-3x"
+                                                                            aria-hidden="true"></i></a>
+                <p>And: <a href="mailto:yangcheska@gmail.com?Subject=add%20subject"
+                           target="_blank">yangcheska@gmail.com</a></p>
+            </div>
+
+            <div>
+                <p>One random fact about Me (refresh if you're interested to know more :) )</p>
+                <div id="randomFact">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Copyright @ <a href="http://iamqianyang.github.io/" target="_blank"> Cheska (Qian) Yang </a>
+    </div>
 
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>

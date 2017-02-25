@@ -7,6 +7,7 @@
 let filters = document.querySelectorAll('.filter p');
 let frontEndProjects = document.querySelectorAll('.front-end');
 let uxProjects = document.querySelectorAll('.ux');
+let reactProjects = document.querySelectorAll('.react');
 let allProjects = [];
 
 let addAllProjects = function(){
@@ -14,11 +15,14 @@ let addAllProjects = function(){
     allProjects.push(frontEndProjects[i])
   }
 
+  for (let i =0; i< reactProjects.length; i++) {
+    allProjects.push(reactProjects[i])
+  }
+
   for (let i =0; i < uxProjects.length; i++){
     allProjects.push(uxProjects[i])
   }
 };
-
 
 
 let addFilterEventListener = function(){
@@ -44,6 +48,12 @@ let filterProjects = function(name){
   if (name === 'front-end'){
     for (let i = 0; i < frontEndProjects.length; i++){
       frontEndProjects[i].classList.remove('hide');
+    }
+  }
+
+  if (name === 'react'){
+    for (let i = 0; i < reactProjects.length; i++){
+      reactProjects[i].classList.remove('hide');
     }
   }
 
@@ -75,11 +85,11 @@ $(window).on("scroll", function() {
 
   var currentPos = $(window).scrollTop() + 70;
 
-  $('.navigation li a:lt(3)').each(function() {
+  $('.navigation li a:lt(4)').each(function() {
     var menu = $(this);
     var section = $(menu.attr('href'));
     if(section.position().top <= currentPos && menu.offset().top + section.height() > currentPos){
-      $('.navigation li').removeClass('active');
+      $('.navigation li a').removeClass('active');
       menu.parent().addClass('active');
     }
     else {
@@ -90,14 +100,14 @@ $(window).on("scroll", function() {
 });
 
 // random facts
-let facts = [
-  '<p>Qian loves food and is a good cook.</p>',
-  '<p>Qian loves sports. She is Ajacied (Ik ben Ajacied!)</p>',
-  '<p>Qian jogges 3 times each week, 6.5KM each time; Sometimes 10KM (about 6m10s/KM).</p>', 
-  '<p>Qian loves books. She reads all genres. She is heavily influenced by Existentialism, and loves Existentialist literature.</p>',
-  '<p>Qian admires <a href="https://en.wikipedia.org/wiki/Wang_Yangming" target="_blank">Wang Yangming</a>.</p>',
-  '<p>Qian loves <a href="https://en.wikipedia.org/wiki/Ci_(poetry)" target="_blank">Ci</a>, her favorite poet is <a href="https://en.wikipedia.org/wiki/Xin_Qiji">Xin Qiji</a>, and she wrote her own poems as well.</p>',
-  '<p>Qian loves anmie and manga!</p>'
+const facts = [
+  '<p>Cheska loves food and is a good cook.</p>',
+  '<p>Cheska loves sports. She is Ajacied (Ik ben Ajacied!)</p>',
+  '<p>Cheska jogges 3 times each week, 6.5KM each time; Sometimes 10KM (about 6m10s/KM).</p>',
+  '<p>Cheska loves books. She reads all genres. She is heavily influenced by Existentialism, and loves Existentialist literature.</p>',
+  '<p>Cheska admires <a href="https://en.wikipedia.org/wiki/Wang_Yangming" target="_blank">Wang Yangming</a>.</p>',
+  '<p>Cheska loves <a href="https://en.wikipedia.org/wiki/Ci_(poetry)" target="_blank">Ci</a>, her favorite poet is <a href="https://en.wikipedia.org/wiki/Xin_Qiji">Xin Qiji</a>, and she wrote her own poems as well.</p>',
+  '<p>Cheska loves anmie and manga!</p>'
 ];
 
 let randomFactDiv = document.querySelector('#randomFact');
