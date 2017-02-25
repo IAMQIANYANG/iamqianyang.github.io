@@ -83,17 +83,19 @@ let removeHighlightAll = function(){
 
 $(window).on("scroll", function() {
 
+  console.log("hi you")
+
   var currentPos = $(window).scrollTop() + 70;
 
   $('.navigation li a:lt(4)').each(function() {
     var menu = $(this);
     var section = $(menu.attr('href'));
     if(section.position().top <= currentPos && menu.offset().top + section.height() > currentPos){
-      $('.navigation li a').removeClass('active');
-      menu.parent().addClass('active');
+      $('.navigation li').removeClass('nav-active');
+      menu.parent().addClass('nav-active');
     }
     else {
-      menu.parent().removeClass('active');
+      menu.parent().removeClass('nav-active');
     }
   });
 
