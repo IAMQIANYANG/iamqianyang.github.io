@@ -1,5 +1,5 @@
 body {
-    background: #fcf8f7;
+    background: #FFFFF7;
     font-family: 'Roboto', sans-serif;
     margin:0;
 
@@ -29,7 +29,7 @@ body {
 
 
 .navigation {
-    background: #fcf8f7;
+    background: #FFFFF7;
     list-style: none;
     margin: 0;
     padding:0;
@@ -92,17 +92,22 @@ body {
 /* about */
 #about {
     width:100%;
-    margin-top:150px;
+    margin-top:200px;
     text-align: center;
 }
 
 #about h1{
     text-align: center;
 }
+
+
 #header{
-    height: 130px;
+    color:#fff;
+    height: 150px;
     padding-top:15px;
-    margin-bottom:100px;
+    margin-top:30px;
+    margin-bottom:50px;
+    background: #4ECDC4;
 }
 
 #header h2{
@@ -116,11 +121,6 @@ body {
     padding-bottom:10px;
 }
 
-.divider {
-    border-bottom: 1px solid #4ECDC4;
-}
-
-
 /* highlights*/
 
 .carousel-control.left, .carousel-control.right {
@@ -133,6 +133,10 @@ body {
 
 .carousel-indicators .active {
     background-color: #4ECDC4;
+}
+
+.carousel-indicators li {
+    background-color: #A2DED0;
 }
 
 .item p{

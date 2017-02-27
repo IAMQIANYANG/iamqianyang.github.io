@@ -82,9 +82,7 @@ let removeHighlightAll = function(){
 // scroll and highlight
 
 $(window).on("scroll", function() {
-
-  console.log("hi you")
-
+  
   var currentPos = $(window).scrollTop() + 70;
 
   $('.navigation li a:lt(4)').each(function() {

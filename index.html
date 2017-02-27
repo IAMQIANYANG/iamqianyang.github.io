@@ -51,15 +51,17 @@
         </div>
 
     </div>
-    <div class="row divider">
-        <div id="header" class="col-md-6 col-md-offset-1">
-            <h2>Cheska (Qian) Yang's Portfolio</h2>
-            <h3>Web dev | Data analyst</h3>
-        </div>
+    <div class="row">
         <div class="col-md-3 col-md-pull-2">
             <p>Hi there, welcome! I'm a web developer/data analyst living in Vancouver BC, Canada</p>
             <p>I graduated from the master program Library and Information Studies at University of British Columbia in Dec.2016</p>
             <p>I'm currently looking for full-time/contract opportunities in web development or data analysis.</p>
+        </div>
+
+        <div id="header" class="col-md-12">
+            <h2>Cheska (Qian) Yang's Portfolio</h2>
+            <h4>______________________________</h4>
+            <h3>Web dev | Data analyst</h3>
         </div>
     </div>
 </div>
@@ -67,7 +69,7 @@
 <div class="container-fluid">
     <div class="section" id="highlights">
         <h1>Project Highlights</h1>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -109,19 +111,24 @@
 
                 <div class="item">
                     <div class="col-md-7">
-                        <img class="col-md-11 img-responsive" src="project-img/recipe-qoo.png" alt="Twitter spam detector">
+                        <img class="col-md-11 img-responsive" src="project-img/twitter-emotion-spam.png" alt="Twitter spam detector">
                     </div>
                     <div class="highlights-intro col-md-5">
                         <h3>Twitter Emotion Spam Detector</h3>
-                        <a href="https://recipe-qoo.firebaseapp.com/" target="_blank">https://recipe-qoo.firebaseapp.com/</a>
+                        <a href="https://twitter-emotion-spam.herokuapp.com/" target="_blank">https://twitter-emotion-spam.herokuapp.com/</a>
                         <p>This is a group project for the course LIBR 559N - Text Analytics. The goal is to analyze and detect emotion
-                            spams (tweets assigned with a emotion hashtag but don’t actually express the emotion) on
+                            spams (tweets assigned with an emotion hashtag but don’t actually express the emotion) on
                             Twitter.</p>
                         <p>Project involved in crawling data, labelling them, conducting an in-depth analysis, and
                             building a machine learning model to identify the major emotion spams.</p>
                         <p>My major role was to wrote code to normalize the crawled data, train the labelled data using
                             the Support Vector Machine algorithm to identify future emotion spams (accuracy 88.13%).</p>
+                        <p>As an extension of the project outside school, I developed a simple web interface which users can interact with the classifier
+                        to check if a tweet is an emotion spam.</p>
 
+                        <h4>Stacks</h4>
+                        <p>Wed: Flask (with Jinja), hosted on heroku.</p>
+                        <p>Tools: NLTK, Scikit-learn</p>
 
                     </div>
                 </div>
